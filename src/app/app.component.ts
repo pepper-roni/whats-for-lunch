@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'whats-for-lunch';
+  restaurants: string[] = ["McDonalds", "Campio", "Remedy"];
+  theChosenOne: string = "";
+  showFood: boolean = false;
+
+  randomRestaurant(restaurants: string[]) {
+    this.showFood = true;
+    this.theChosenOne = restaurants[Math.floor(Math.random() * restaurants.length)];
+  }
 }
