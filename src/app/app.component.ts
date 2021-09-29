@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  restaurants: string[] = ["McDonalds", "Campio", "Remedy"];
+  restaurants: string[] = ["McDonalds", "Campio", "Remedy", "Tres Carnales", "Kellys", "Lets Grill", "Dorinku"];
   theChosenOne: string = "";
   showFood: boolean = false;
 
