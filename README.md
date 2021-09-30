@@ -7,6 +7,7 @@ https://whats-for-lunch-wkt.herokuapp.com/
 - Sort by cost, location, type
 - Slack interact with lunch train
 - Google Map API integration instead of just a link to search
+- Google Places to have a more detailed list: https://developers.google.com/maps/documentation/javascript/reference/places-service
 - Basic account with favourites, and your orgs accounts
 
 ## Development server
