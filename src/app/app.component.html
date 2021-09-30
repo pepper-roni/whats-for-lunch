@@ -17,8 +17,8 @@ e<div class="toolbar" role="banner">
     </a>
   </div>
 
-  <h2 *ngIf="showFood">You should eat at <span class="restaurant">{{ theChosenOne }}</span></h2>
-  <img *ngIf="theChosenOne == 'McDonalds'" src="assets/ronald.jpeg" class="ronald">
+  <h2 *ngIf="showFood">You should eat at <span class="restaurant">{{ theChosenOne?.name }}</span></h2>
+  <img *ngIf="theChosenOne?.name == 'McDonalds'" src="assets/ronald.jpeg" class="ronald">
 
   <div *ngIf="showFood" class="card-container">
     <a class="card" href="slack://channel?team=TT1T37BHD&id=CSNQD8KS7">

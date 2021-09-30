@@ -1,4 +1,13 @@
+import { ValueConverter } from '@angular/compiler/src/render3/view/template';
 import { Component } from '@angular/core';
+import restaurantsData from './restaurants.json';
+
+export interface Restaurant {
+  id: Number
+  name: string;
+  cost: Number;
+  type: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -6,17 +15,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  restaurants: string[] = ["McDonalds", "Campio", "Remedy", "Tres Carnales", "Kellys", "Lets Grill", "Dorinku", "Chicken For Lunch", "Farrow", "CRAFT Beer Market", "Underground Tap & Grill", "Splash Poke", "The Burgers Priest", "Kyoto Sushi", "Northern Chicken"];
-  theChosenOne: string = "";
+
+  restaurants: Restaurant[] = restaurantsData;
+  theChosenOne: Restaurant | undefined = undefined;
   showFood: boolean = false;
 
-  randomRestaurant(restaurants: string[]) {
+  randomRestaurant(restaurants: Restaurant[]) {
     this.showFood = true;
     this.theChosenOne = restaurants[Math.floor(Math.random() * restaurants.length)];
   }
 
   correctAnswer() {
     this.showFood = true;
-    this.theChosenOne = "McDonalds";
+    this.theChosenOne = this.restaurants.find(x => x.name === "McDonalds");
   }
 }

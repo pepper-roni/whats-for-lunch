@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "McDonalds",
+    "cost": 1,
+    "type": "Fast Food"
+  },
+  {
+    "id": 2,
+    "name": "Campio",
+    "cost": 1,
+    "type": "Fast Food"
+  },
+  {
+    "id": 3,
+    "name": "Remedy",
+    "cost": 1,
+    "type": "Fast Food"
+  },
+  {
+    "id": 4,
+    "name": "Tres Carnales",
+    "cost": 1,
+    "type": "Fast Food"
+  },
+  {
+    "id": 5,
+    "name": "Kellys",
+    "cost": 1,
+    "type": "Fast Food"
+  }
+]
