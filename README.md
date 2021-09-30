@@ -1,5 +1,7 @@
 # WhatsForLunch
 
+https://whats-for-lunch-wkt.herokuapp.com/
+
 ## Features to build
 
 - Sort by cost, location, type
@@ -10,3 +12,8 @@
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Production Server
+
+Install `npm i express --save`
+Run `node server.js` and go to `http://localhost:8080/`
