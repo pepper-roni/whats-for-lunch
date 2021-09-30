@@ -6,22 +6,34 @@ e<div class="toolbar" role="banner">
 
 <div class="content" role="main">
   <h2>Where Should I Eat?</h2>
-  <p>Here are some links to help you get started:</p>
+  <p>Let your fate be decided by the algorithm or pick the correct answer:</p>
 
   <div class="card-container">
-    <a class="card" (click)="randomRestaurant(restaurants)" rel="noopener" href="#">
+    <a class="card" (click)="randomRestaurant(restaurants)">
       <span>Random</span>
     </a>
-
-    <a class="card" target="_blank" rel="noopener" href="https://blog.angular.io/">
-      <span>Angular Blog</span>
+    <a class="card" (click)="correctAnswer()">
+      <span>The Correct Answer</span>
     </a>
   </div>
 
   <h2 *ngIf="showFood">You should eat at <span class="restaurant">{{ theChosenOne }}</span></h2>
+  <img *ngIf="theChosenOne == 'McDonalds'" src="assets/ronald.jpeg" class="ronald">
+
+  <div *ngIf="showFood" class="card-container">
+    <a class="card" href="slack://channel?team=TT1T37BHD&id=CSNQD8KS7">
+      <span>Start a Lunch Train</span>
+    </a>
+    <a class="card" target="_blank" href="https://www.google.ca/maps/search/{{ theChosenOne }}">
+      <span>Get Directions</span>
+    </a>
+    <a class="card" target="_blank" href="https://www.skipthedishes.com">
+      <span>Get it Devlivered</span>
+    </a>
+  </div>
 
   <footer>
-    <p>Food.</p>
+    <p>I hope I don't get fired for wasting the hackathon making this.</p>
   </footer>
 </div>
 

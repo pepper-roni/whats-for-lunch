@@ -191,19 +191,28 @@ a:hover {
 }
 
 footer {
+  position: absolute;
+  padding: 0 10px 0 10px;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
   margin-top: 8px;
   display: flex;
+  justify-content: center;
   align-items: center;
   line-height: 20px;
-}
-
-footer a {
   display: flex;
-  align-items: center;
+  background-color: #DA291C;
+  color: #FFC72C;
+  font-weight: 600;
 }
 
-.restaurant{
+.restaurant {
   color: #DA291C;
+}
+
+.ronald {
+  max-height:300px;
 }
 
 /* Responsive Styles */
